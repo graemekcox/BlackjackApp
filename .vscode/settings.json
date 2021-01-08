@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp",
+        "*.dat": "cpp",
+        "iosfwd": "cpp",
+        "memory": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp"
+    }
+}

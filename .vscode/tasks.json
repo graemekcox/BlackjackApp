@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: clang++ build active file",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-g",
+				"${file}",
+				"${workspaceFolder}/src/handler.cpp",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-lcpprest",
+				"-lcrypto",
+				"-lssl",
+				"-lboost_system",
+				"-lboost_thread-mt",
+				"-lboost_chrono-mt",
+				"-L/usr/local/opt/openssl@1.1/lib",
+				"-I/usr/local/opt/openssl/include",
+
+				// "-I/${workspaceFolder}/include/other_includes"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
