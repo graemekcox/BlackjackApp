@@ -11,6 +11,7 @@
 				"-g",
 				"${file}",
 				"${workspaceFolder}/src/handler.cpp",
+				"${workspaceFolder}/src/game.cpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}",
 				"-lcpprest",
